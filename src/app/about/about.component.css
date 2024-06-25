@@ -1,0 +1,22 @@
+#about-page {
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: rgb(49, 49, 49);
+}
+
+#about-card {
+    align-self: center;
+    transition: ease 0.5s;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.473);
+    width: 50%;
+    min-width: 35%;
+    transition: ease 0.5s;
+}
+
+
+#about-card:hover {
+    -webkit-transform: scale(1.08);
+}

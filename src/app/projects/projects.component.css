@@ -1,0 +1,42 @@
+#project-panel {
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(49, 49, 49);
+}
+
+#profile-card {
+    align-self: center;
+    transition: ease 0.5s;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.473);
+    width: 700px;
+}
+
+#card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#card-body > p{
+    padding: 10px;
+}
+
+#gitlink-btn {
+    transition: ease 0.25s;
+}
+
+#gitlink-btn:hover {
+    -webkit-transform: scale(1.05);
+}
+
+#gitlink-btn:active {
+    -webkit-transform: scale(1.08);
+    background-color: rgb(3, 3, 207);
+}
+
+#profile-card:hover {
+    -webkit-transform: scale(1.05);
+}

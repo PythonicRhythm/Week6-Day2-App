@@ -1,0 +1,21 @@
+
+<div id="contact-page">
+    <div class="card text-center" style="width: 18rem;" id="contact-card">
+        <div class="card-body">
+            <h5 class="card-title">Contact Me!</h5>
+            <form #f = "ngForm" (ngSubmit) = "onSubmit(f)" novalidate>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input name="email" type="email" class="form-control" ngModel required #email
+                id="email" placeholder="name@example.com">
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary mb-2" id="submit-button">Submit</button>
+            </form>
+        </div>
+        <p>Email: {{email.value}}</p>
+        <p>Email Valid: {{email.value ? "true" : "Not Entered"}}</p>
+        <p>Form Values: {{f.value | json}}</p>
+        <p>Form Valid: {{f.valid}}</p>
+    </div>
+</div>
