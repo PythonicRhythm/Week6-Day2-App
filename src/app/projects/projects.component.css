@@ -15,6 +15,11 @@
 
 #project-accordian {
     margin-right: 4%;
+    transition: ease 0.25s;
+}
+
+#project-accordian:hover {
+    -webkit-transform: scale(1.02);
 }
 
 #profile-card {
